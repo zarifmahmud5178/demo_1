@@ -1,0 +1,259 @@
+/* *common css */
+:root {
+    --primaryFont: 'Poppins', sans-serif;
+    --secondaryFont: 'PT Sans', sans-serif;
+    --primaryColor: #353535;
+    --seconadaryColor: #FFCC00;
+    --thirdTxtColor: #7A7A7A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+
+body {
+    font-family: var(--primaryFont);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+
+.button {
+    border-radius: 20px;
+    background: var(--seconadaryColor);
+    padding: 17px 45px;
+    color: #FFF;
+font-family: var(--primaryFont);
+font-size: 20px;
+font-weight: 600;
+line-height: 180%; /* 36px */
+display: inline-block;
+}
+
+/* *common css */
+
+
+/* *NAVBAR STARTS HERE */
+
+#mynavBar ul li a {
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%; /* 30px */
+    text-transform: uppercase;
+    padding: 5px 22px;
+    position: relative;
+}
+
+#mynavBar ul li a::before {
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: var(--primaryColor);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .25s;
+}
+
+#mynavBar ul li:hover a::before {
+    width: 100%;
+} 
+
+
+.myMenu {
+    border: none;
+    outline: none ;
+}
+
+
+/* *NAVBAR ENDS HERE */
+/* *BANNER STARTS HERE */
+
+.banner_cnt {
+    padding: 0;
+}
+
+#bannner span p {
+    color: var(--primaryColor);
+
+font-family: var(--primaryFont);
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 15px;
+}
+
+#bannner span p img {
+width: 32px;
+height: 32px;
+flex-shrink: 0;
+}
+
+#bannner span p span {
+    margin-right: 38px;
+
+}
+
+#bannner h2 {
+    color: var(--primaryColor);
+
+font-family: var(--secondaryFont);
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 25px;
+}
+
+#bannner p {
+    color: var(--primaryColor);
+
+font-family: var(--primaryFont);
+font-size: 20px;
+font-weight: 400;
+line-height: 180%; /* 36px */
+}
+
+.buttons {
+    margin-top: 45px;
+    margin-bottom: 66px;
+}
+
+.button.outline {
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
+    padding: 15px 45px;
+    margin-left: 40px;
+}
+
+.social_icons span {
+color: var(--primaryColor);
+
+font-family: var(--primaryFont);
+font-size: 22px;
+font-weight: 500;
+line-height: 180%; /* 39.6px */
+margin-right: 32px;
+}
+
+.social_icons a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: #F4F3F3;
+    color: var(--primaryColor);
+    text-align: center;
+    padding: 10px;
+    margin: 0 8px;
+    display: inline;
+    transition: .25s;
+}
+
+.social_icons a:hover {
+    background-color: var(--primaryColor);
+    color: #ffffff;
+}
+
+/* *BANNER ENDS HERE */
+
+
+/* *ABOUT STARTS HERE */
+#about {
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+    margin: 104px 0;
+}
+
+#about  .about-img {
+    margin-top: 26px;
+}
+
+#about  .about-text h1 {
+    color: var(--primaryColor);
+font-family: var(--secondaryFont);
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+#about  .about-text p {
+    color: var(--primaryColor);
+font-family: var(--primaryFont);
+font-size: 20px;
+font-weight: 400;
+line-height: 190%; /* 38px */
+margin-bottom: 45px;
+}
+
+#about  .about-text a.outline {
+    margin-left: 0;
+}
+
+/* *ABOUT ENDS HERE */
+
+/* *CARD STARTS */
+
+#card  {
+    margin-bottom: 165px;
+}
+
+#card .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#card .card img {
+    width: 78px;
+    height: 79px;
+    display: inline-block;
+    margin: 39px 124px;
+    margin-top: 39px; !important
+}
+
+#card .card {
+    width: 350px;
+    height: 367px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    border: none;
+    outline: none;
+}
+
+#card .card h3 {
+color: var(--primaryColor);
+text-align: center;
+font-family: var(--primaryFont);
+font-size: 22px;
+font-weight: 600;
+line-height: 180%; /* 39.6px */
+margin-bottom: 14px;
+}
+
+#card .card p {
+color: var(--thirdTxtColor);
+text-align: center;
+font-family: var(--primaryFont);
+font-size: 16px;
+font-weight: 400;
+line-height: 190%; /* 30.4px */
+}
+
+/* *CARD ENDS */

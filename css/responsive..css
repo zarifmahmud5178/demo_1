@@ -1,0 +1,40 @@
+@media (min-width: 320px) and (max-width: 991px) {
+    .myNav {
+        padding-bottom: 15px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    }
+    #bannner {
+        padding: 37px 0;
+    } .banner_cnt span p,
+      .banner_cnt p {
+        font-size: 15px;
+    } .banner_cnt h2 {
+        font-size: 34px;
+    }.banner_cnt .button {
+        font-size: 10px;
+        padding: 9px 20px;
+        border-radius: 10px;
+}   .banner_cnt .button.outline {
+    margin-left: 12px;
+}
+
+#bannner .banner_img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about .about-text h1 {
+    margin-top: 33px;
+    font-size: 24px;
+}
+
+#about .about-text p {
+    font-size: 15px;
+}
+
+#about .about-text a {
+    padding: 11px 28px;
+    font-size: 15px;
+}
+    
+}
